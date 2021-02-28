@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Healthy Pooch | Connect</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+<style>
+.fa{
+  padding:20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration:none;
+
+}
+.fa:hover{
+  opacity: 0.7;
+}
+.fa -facebook{
+  background-color:#3B5998;
+  color:white;
+}
+.fa -instagram{
+  background-color:#f09433;
+  color:white;
+}
+.fa -pinterest{
+  background-color: #cb2027;
+  color: white;
+}
+  .message
+   {
+     width: 600px;
+    border: 2px solid #333;
+    padding: 15px 10px;
+    margin: 0 auto;
+    }
+    .message h2
+    {
+      text-align: none;
+      margin-bottom: 15px;
+    }
+    input[type=submit], button
+    {
+      padding: 10px 15px;
+      border:none;
+      outline:none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+
+    }
+    input[type=submit]
+    {
+      color: #fff;
+      background-color: #273c75;
+    }
+    button
+    {
+      color: #333;
+      background-color: transparent;
+    }
+    body{
+      background-image: url('images/chatBg7.png')
+    }
+    .lineHeight{
+      line-height: 2;
+    }
+    .socialMedia{
+      padding-left:500px;
+    }
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+#mySidenav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+</style>
+</head>
+<body>
+  <div id ="mySidenav" class= "sidenav">
+    <a href ="index.html" id="home"> Home </a>
+    <a href ="exercise.html" id="courses">Exercise</a>
+    <a href ="de-stress.html"id="De-stress">Play Time</a>
+    <a href = "connect.html" id="connect" style="top:200px;"> Connect </a>
+  </div>
+
+  <script src="script.js"></script>
+  <h1 style="text-align:center;"> Connect </h1>
+  <p style='color:gray;padding-left:50px;padding-right:50px;margin-left:350px; margin-right:350px;'class="lineHeight"><b> Welcome to our Community.</b> A community where you can interact with other dog owners.
+     Click the comment section down below to start your very first chat, and set up play dates with other pooches, get advice, and meet new dog lovers. </p><br>
+  <p style="text-align:center;color:gray;"><i>"Alone, we can do so little; Together we can do so much!"</i>
+  <br><br><br>
+<div class="container">
+<img src="profilePic.jpg" alt="FitFoxxx">
+<p>Hey does Max want to come over tomorrow to play with Crystal?  </p>
+<span class="time-right">11:03</span>
+</div>
+
+<div class="container darker">
+<img src="dogWave.jpg" alt="FitnessYoda" class="right">
+<p>Yeah! Max would love to come over. It's been a while since Max and Crystal hung out. Max is really missing her!</p>
+<span class="time-left">11:37</span>
+</div>
+
+<div class="container">
+<img src="profilePic.jpg" alt="FitFoxxx">
+<p>Yep, Crystal misses Max too! Does 4pm sound good?</p>
+<span class="time-right">12:34</span>
+</div>
+
+<div class="container darker">
+<img src="dogWave.jpg" alt="FitnessYoda" class="right">
+<p>Yup, sounds awesome! Max and I will be there with the treats!</p>
+<span class="time-left">1:28</span>
+</div>
+<div class="message">
+    <h2> Join the Community!</h2>
+      <input id="example" type="text"
+      name="Ntext" size="20">
+      <input id="sent" type="submit" value="Comment">
+
+    </div>
+
+  <p id="para">
+  </p>
+<div class="socialMedia">
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.pinterst.com/" class ="fa fa-pinterest"></a>
+</div>
+</body>
+<script>
+  window.onclick = function(e)
+  {   var id =  e.target.id;
+   if (id === 'sent')
+   { var txt = document.getElementById('example').value
+     $( "#para" ).empty().append( txt );
+   }
+  }
+</script>
+<style>
+/* Chat containers */
+.container {
+border: 2px solid #dedede;
+background-color: #f1f1f1;
+border-radius: 5px;
+padding: 10px;
+margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+border-color: #ccc;
+background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+  </style>
+</html>

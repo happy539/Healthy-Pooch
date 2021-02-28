@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title> Login | Healthy Pooch </title>
+  <h1> Login </h1>
+  <h3> Welcome Back Fellow Dog Lover </h3>
+  <hr>
+</head>
+<body>
+  <form enctype="multipart/form-data" method="post" action="loginPooch.py">
+    <label name="email_lbl"> <br><br>
+    <input id="email" type=email name="email" placeholder="Enter your Email" required/><br><br>
+    <label name="password_lbl"><br><br>
+    <input type=password id="pwd" name="pwd" placeholder="Enter your Password" required/><br><br><br>
+    <input type="submit" id="login" name="submit" value="Login!" required/><br><br>
+    <input type="checkbox" id="rm" name="rm" value="Remember Me" checked=True required> Remember Me <br><br>
+    <input type="checkbox" onclick="show()">Show Password <br><br>
+    <a href="Signup.html"><b> Don't have an account? Sign Up!<b> </a>
+</body>
+<style>
+
+input[type="email"]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=email]:focus {
+  border: 3px solid #555;
+}
+
+input[type="email"]::placeholder{
+  font-size:16px;
+}
+input[type="password"]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=password]:focus {
+  border: 3px solid #555;
+}
+
+input[type="submit"]{
+  width: 125px;
+  height: 50px;
+  background-color: purple;
+  border: 5px solid white;
+  color: white;
+}
+input[type="submit"]:hover{
+  background-color: white;
+  color: purple;
+  border: 5px solid purple;
+}
+body{
+  background-image: url('loginBkg.jpg')
+}
+input[type="text"]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type="text"]::placeholder{
+  font-size:16px;
+}
+body{
+  font-color:white;
+}
+
+</style>
+<script>
+ function show() {
+  var password = document.getElementById("pwd");
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+}
+</script>
+</html>

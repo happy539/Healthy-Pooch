@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Healthy Pooch</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.fa{
+  padding:20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration:none;
+
+}
+}
+.fa -heart{
+  background-color:black;
+}
+.fa -cog{
+  background-color:black;
+
+}
+.fa -diamond{
+  background-color: black;
+}
+.fa -desktop{
+  background-color: black;
+}
+
+.header2 {
+  padding: 70px;
+  background-color:floralWhite;
+}
+/* This is for the newsletter*/
+form {
+  border: 4px solid #f1f1f1;
+}
+.news {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=checkbox] {
+  margin-top: 16px;
+}
+input[type=submit] {
+  background-color: navajoWhite;
+  color: black;
+  border: none;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+.header {
+   background-image: url('mainBkg.jpg');
+   text-align: center;
+}
+.homePage{
+  margin-left:220px;
+}
+body {
+  align: center;
+  font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+p{
+  color:#696969;
+}
+ #mySidenav{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+
+
+.fa -facebook{
+  background-color:#3B5998;
+  color:white;
+}
+.fa -instagram{
+  background-color:#f09433;
+  color:white;
+}
+.fa -pinterest{
+  background-color: #cb2027;
+  color: white;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id ="mySidenav" class= "sidenav">
+      <a href ="index.html" id="home"> Home </a>
+      <a href ="exercise.html" id="courses">Exercise</a>
+      <a href ="de-stress.html"id="De-stress">Play Time</a>
+      <a href = "connect.html" id="connect"> Connect </a>
+    </div>
+
+    <div class ="header">
+
+      <img src="dogs.png" style='width:80%;height:200px;'>
+      <h1 style='font-size: 70px;letter-spacing:5px;color:maroon;'> Healthy Pooch </h1>
+      <h4 style ="font-size:20px;color:maroon;letter-spacing:5px;"> Here at Healthy Pooch our goal is to provide dog owners access to exercises that will help their pooch stay emotionally and physically fit. With new exercises added on a regular basis and a community for you to communicate your concerns with other dog owners, Healthy Pooch can be just the key to
+ decipher your pooch's health.<br><br>
+<b> Sign up today to keep your pooch fitter than ever!</b><br><br>
+
+<button  id="signUp" onclick="window.location.href='Signup.html'"> Sign Up! </button>
+<button  id="login" onclick="window.location.href='login.html'">Login </button>
+</div>
+<style>
+#signUp{
+  width: 200px;
+  height: 75px;
+  background-color: purple;
+  border: 5px solid #ffb3ff;
+  color: white;
+  margin-right: 15px;
+}
+#signUp:hover{
+  background-color: white;
+  color: purple;
+  border: 5px solid purple;
+}
+#login{
+  width: 200px;
+  height: 75px;
+  background-color: purple;
+  border: 5px solid #ffb3ff;
+  color: white;
+}
+#login:hover{
+  background-color: white;
+  color: purple;
+  border: 5px solid purple;
+}
+</style>
+
+<div class ="homePage">
+    <h1 style="margin-left:330px;"> About Us </h1>
+    <p style=" margin-left:300px;"> Key Features of Our Company </p>
+    <div id ="left" >
+      <i class="fa fa-desktop"></i>
+      <p> Responsible </p>
+      <p>Able to be trusted to do what is right or to do the things that are expected or required. </p>
+      </div>
+      <div id ="right">
+      <i class ="fa fa-heart"> </i>
+      <p>Commitment</p>
+      <p>An agreement or pledge to do something in the future.</p>
+      </div>
+      <div id ="right">
+      <i class ="fa fa-diamond"> </i>
+      <p>Necessity</p>
+      <p>Something necessary or indispensable: food, shelter, and other necessities of life.</p>
+      </div>
+
+       <div id ="right">
+      <i class="fa fa-cog "></i>
+      <p>Energetic</p>
+      <p>An energetic person is very active and does not feel at all tired. </p>
+      </div>
+  </div>
+  </div>
+  <br> <br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+  <hr style ="padding-left:150px;">
+  <br><br>
+<div class ="header2">
+  <div style="max-width:1100px">
+  <div class="whatWeDo" id="about">
+    <div>
+     <img src="homeDog.jpg" align='right' alt="About Us" width="320" height="430">
+    </div>
+      <h1 style ="padding-left: 150px;">What We Do?</h1>
+      <h4 style ="padding-left: 150px;" >Bring your little ones!</h4>
+      <p style="padding-right:350px; padding-left:150px;color:gray;">
+        More than ever before, we started coming up with some life changing courses. We provide classes for fitness, and growth mindset. We believe health is not just about physical, it's also about being mentally well and healthy. </p>
+
+      <h4 style ="padding-left: 150px;">Games</h4>
+      <p style="padding-right:350px; padding-left:150px;color:gray;">You can find games or ways you can de-stress. Please feel free to open the 'destress' button in the navagation bar. </p>
+
+      <h4 style ="padding-left: 150px;">Jokes</h4>
+      <p style="padding-right:350px; padding-left:150px;color:gray;"> Haha! Yes, laughter was, is, and will always be the best medicine! </p>
+
+      <h4 style ="padding-left: 150px;">Quotes</h4>
+      <p style="padding-right:350px; padding-left:150px;color:gray;">Need a spark of motivation? Don't worry, we got you! We provided some motivational quotes that will help you exercise or just do anything you want. </p>
+    </div>
+  </div>
+  </div>
+<br> <br>
+<hr>
+<br> <br>
+<h2 style="padding-left:560px;"> Meet The Team </h2>
+<p style="padding-left:570px;"> Welcome to our home.</p>
+</div>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="teamMem1.jpg" alt="Jane" style="width:100%; ">
+      <div class="container">
+        <h2>Johan Zee</h2>
+        <p class="title">CEO & Founder</p>
+        <p>A chief executive officer (CEO) is the highest-ranking executive in a company, whose primary responsibilities include making major corporate decisions, managing the overall operations and resources of a company, acting as the main point of communication between the board of directors (the board) and corporate</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="teamMem2.jpg" alt="Mike" style="width:100%; " >
+      <div class="container">
+        <h2>Lizy Rose</h2>
+        <p class="title">Outreach Co-ordinater</p>
+        <p>Image result for description of a outreach worker
+An outreach worker is responsible for supporting community events and relief efforts to assist citizens with their needs, providing them resources, and facilitating lifestyle programs. Outreach workers coordinate with participants, suppliers, and sponsors for funding and promotions. </p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="teamMem3.jpg" alt="John" style="width:100%; ">
+      <div class="container">
+        <h2>Emma</h2>
+        <p class="title">Finance & Logistics</p>
+        <p>Logisticians oversee activities that include purchasing, transportation, inventory, and warehousing. ... They operate software programs designed specifically to manage logistical functions, such as procurement, inventory management, and other supply chain planning and management systems.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br> <br>
+<hr>
+<br> <br>
+<h1 style="align:center;"> Contact </h1>
+<p> Lets get in touch. Send us a message: </p>
+<p> <i class ="fa fa-map-marker"></i> Massachusetts, US </p>
+<p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+<p><i class="fa fa-envelope"> </i> Email: example@example.com</p>
+<br>
+<form action ="action_page.php" target = "_blank">
+  <div class ="email">
+  <p><input type="text" placeholder="Name" required name="Name"></p>
+      <p><input type="text" placeholder="Email" required name="Email"></p>
+      <p><input  type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+      </div>
+    </form>
+<br> <br>
+<hr>
+<br> <br>
+
+<form action="action_page.php">
+  <div class="news">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Subscribe to our monthly newsletter for updates on new and upcoming mental and physical exercises. </p>
+  </div>
+
+  <div class="news" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="news">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+    <script src="script.js"></script>
+</div>
+<div class ="socialMedia">
+  <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.pinterst.com/" class ="fa fa-pinterest"></a>
+</div>
+  </body>
+</html>

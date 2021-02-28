@@ -1,0 +1,151 @@
+<html>
+<head>
+  <title> Healthy Pooch | Sign Up </title>
+</head>
+<body>
+  <h1> Sign Up </h1>
+    <p> Fill in this form to create an account for your pooch </p>
+    <hr>
+    <form enctype="multipart/form-data" method="post" action="pooch.py">
+      <label for="Oname"> <b> Owner's Name</b> </label>
+      <br>
+      <br>
+      <input id="Oname" class="form" type="text" placeholder="Enter Owner's First Name" name="Oname" required/>
+      <br>
+      <br>
+
+      <label for="owner_lname"> <b> Last Name</b> </label>
+      <br>
+      <br>
+      <input id="owner_lname" class="form" type="text" placeholder="Enter Owner's Last Name" name="owner_lname" required>
+      <br>
+      <br>
+
+      <label for="email"> <b>Email</b></label>
+      <br>
+      <br>
+      <input id="email" class="form" type="email" placeholder="Enter Owner's Email" name="email" required>
+      <br>
+      <br>
+
+      <label for="dogName"> <b>Pooch's First Name </b> </label>
+      <br><br>
+      <input id="dogName" class="form" type="text" placeholder="Enter Dog's Name" name="dogName" required>
+      <br><br>
+      <label for="dogBreed"> <b>Pooch's Breed </b> </label>
+      <br><br>
+      <input id="dogBreed" class="form" type="text" placeholder="Enter Dog's Breed" name="dogBreed" required>
+      <br><br>
+      <label for="gender" name="gender"> <b> Dog's Gender </b> </label>
+      <br>
+      <br>
+      <select id="gender" class="form" name="gender">
+          <option selected value=> ---Gender--- </option>
+          <option value="Female"> Female </option>
+          <option value="Male"> Male </option>
+      </select>
+      <br>
+      <br>
+      <label for="age"><b>Dog's Age (Years) </b> </label>
+      <br><br>
+      <input id="dogAge" class="form" type="number" name="dogAge" required/>
+      <br><br>
+
+      <label for="password"> <b> Password </b> </label>
+      <br>
+      <br>
+      <title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <input id= "password" class="form" type="password" name="password" placeholder="Enter a Password" required>
+      <br><br>
+      <label for="profile"><b>Enter an Image of Your Pooch! </label> <br><br>
+      <input type="file" id="profile" name="filename" placeholder="Enter an Image of your Pooch!" required/>
+      <br><br>
+      <input type="submit" id="submit" value="Sign Up!" name="sub" >
+    <br>
+    <br>
+  </form>
+  <a href="login.html" style="text-color:green"> Already have an account? Login! </a>
+</body>
+<style>
+input[type="text"]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type="text"]::placeholder{
+  font-size:16px;
+}
+
+input[type="email"]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=email]:focus {
+  border: 3px solid #555;
+}
+
+input[type="email"]::placeholder{
+  font-size:16px;
+}
+input[type="password"]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=password]:focus {
+  border: 3px solid #555;
+}
+input[type="number"]{
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=number]:focus {
+  border: 3px solid #555;
+}
+input[type="number"]::placeholder{
+  font-size:16px;
+}
+label{
+  display:inline-block;
+  padding: 10px 18px;
+  font-size: 20px;
+}
+
+
+#gender {
+  text-align-last:center;
+  width:200px;
+  height: 50px;
+  font-size: 16px;
+}
+#showPWD {
+  margin-left: 25px;
+}
+input[type="submit"]{
+  width: 125px;
+  height: 50px;
+  background-color: purple;
+  border: 5px solid white;
+  color: white;
+}
+input[type="submit"]:hover{
+  background-color: white;
+  color: purple;
+  border: 5px solid purple;
+}
+body{
+  background-image: url('loginBkg.jpg')
+}
+
+</style>
+</html>
